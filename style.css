@@ -1,4 +1,18 @@
 
+.barra-inicial {
+    margin-top: 15px;
+    display:block;
+    text-align: center;
+    background-color: #E5BEEC;
+}
+
+img {
+
+    width: 700px;
+    height: 700px;
+    display: block;
+    margin: 0 auto;
+}
 
 .barra-branca {
     background-color: white;
@@ -9,18 +23,12 @@ body {
     background-color:#FDE2F3;
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
 #micro {
     font-size:medium;
 
 }
 
-img {
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-    
-}
 
  #d2 {
     display:block;
