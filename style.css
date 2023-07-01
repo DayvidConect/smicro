@@ -1,7 +1,7 @@
 
 
 body {
-    background-color:#FDE2F3;
+    background-color:#5f1350;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -9,7 +9,7 @@ body {
 .grid-container {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 75px 700px 3px 200px 200px 200px 200px 200px 200px;
+grid-template-rows: 75px 700px 3px 100px 200px 200px 200px 200px 200px;
 gap: 30px;
 }
 
@@ -19,7 +19,8 @@ div .one {
     margin-top: 15px;
     display:block;
     text-align: center;
-    background-color: #E5BEEC;
+    background-color: #702c63;
+    color: white;
 }
 
 .two {
@@ -47,6 +48,9 @@ div .one {
     display:block;
     align-items: center;
     text-align: center;
+    color: white;
+    background-color: #531046;
+    
 }
 
 
@@ -72,7 +76,6 @@ div .one {
     display: inline-block;
     margin: 25%;
     border-radius: 18%;
-    
  }
 
  
