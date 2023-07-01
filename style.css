@@ -9,7 +9,7 @@ body {
 .grid-container {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 75px 700px 3px 100px 300px 500px 100px 100px;
+grid-template-rows: 75px 700px 3px 100px 300px 400px 100px 100px;
 gap: 30px;
 }
 
@@ -66,18 +66,15 @@ div .one {
  .thirteen {
     background-color: #531046;
     grid-column: span 3;
-    height: 800px;
-
- }
-
- .thirteen {
     height: 100px;
     width: 100%;
     margin-top: 5%;
     text-align: center;
-    color: white;
-    
+    color: white;   
+
  }
+
+
 
 
  
