@@ -14,7 +14,7 @@ gap: 30px;
 }
 
 
-.one-card {
+.one {
     grid-column: span 3;
     margin-top: 15px;
     display:block;
@@ -30,7 +30,7 @@ gap: 30px;
         margin: 0 auto;
 }
 
-div .three {
+.three {
     background-color: white;  
 }
 
