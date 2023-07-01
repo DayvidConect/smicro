@@ -63,7 +63,7 @@ div .one {
     
  }
 
- .thirteen {
+ div .thirteen {
     background-color: #531046;
     grid-column: span 3;
     height: 100px;
