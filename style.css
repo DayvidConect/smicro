@@ -1,48 +1,60 @@
 
 
-.barra-inicial {
+body {
+    background-color:#FDE2F3;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 75px 700px 3px 200px 200px 200px 200px 200px 200px;
+gap: 30px;
+}
+
+
+.one {
+    grid-column: span 3;
     margin-top: 15px;
     display:block;
     text-align: center;
     background-color: #E5BEEC;
 }
 
-.logo {
-
-    width: 700px;
-    height: 700px;
-    display: block;
-    margin: 0 auto;
+.two {
+    grid-column: span 3;
+        width: 700px;
+        height: 700px;
+        display: block;
+        margin: 0 auto;
 }
 
-.barra-branca {
+.three {
+    background-color: white;  
+}
+
+.four {
+    background-color: #E5BEEC;
+}
+
+.five {
     background-color: white;
-    height: 40px;
 }
 
-body {
-    background-color:#FDE2F3;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-#micro {
-    font-size:medium;
-
-}
-
-
- #d2 {
+.six {
+    grid-column: span 3;
     display:block;
     align-items: center;
     text-align: center;
-    background-color: #E5BEEC;
- }
+}
 
- .block1 {
+
+.block1 {
     height: 200px;
     width: 200px;
     display:inline-block;
-    margin-left: 10%;
+    margin: 25%;
     border-radius: 18%;
  }
 
@@ -50,14 +62,15 @@ body {
     height: 200px;
     width: 200px;
     display:inline-block;
-    margin-left: 20%;
+    margin: 25%;
     border-radius: 18%;
  }
+
  .block3 {
     height: 200px;
     width: 200px;
     display: inline-block;
-    margin-left: 20%;
+    margin: 25%;
     border-radius: 18%;
     
  }
