@@ -9,7 +9,7 @@ body {
 .grid-container {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 75px 700px 3px 100px 200px 200px 200px 200px 200px;
+grid-template-rows: 75px 700px 3px 100px 300px 500px 100px 100px;
 gap: 30px;
 }
 
@@ -32,15 +32,15 @@ div .one {
 }
 
 .three {
-    background-color: white;  
+     
 }
 
 .four {
-    background-color: #E5BEEC;
+    
 }
 
 .five {
-    background-color: white;
+    
 }
 
 .six {
@@ -54,29 +54,31 @@ div .one {
 }
 
 
-.block1 {
-    height: 200px;
-    width: 200px;
+.block {
+    height: 300px;
+    width: 300px;
     display:inline-block;
     margin: 25%;
     border-radius: 18%;
+    
  }
 
- .block2 {
-    height: 200px;
-    width: 200px;
-    display:inline-block;
-    margin: 25%;
-    border-radius: 18%;
+ .thirteen {
+    background-color: #531046;
+    grid-column: span 3;
+    height: 800px;
+
  }
 
- .block3 {
-    height: 200px;
-    width: 200px;
-    display: inline-block;
-    margin: 25%;
-    border-radius: 18%;
+ .thirteen {
+    height: 100px;
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    
  }
+
 
  
  
