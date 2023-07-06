@@ -84,7 +84,6 @@ body {
  }
 
 
-
  @media (max-width: 680px) {
   
 
@@ -93,7 +92,7 @@ body {
         height: 100%;
     }
 
-    div .menu {
+    .head .menu {
         width: 100%;
     }
   
@@ -103,6 +102,7 @@ body {
       margin-bottom: 40px;
       text-align: justify;
     }
+    
     .grid2 {
         width: 100%;
         display: block;
