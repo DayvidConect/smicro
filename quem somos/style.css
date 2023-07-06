@@ -61,7 +61,7 @@ p {
 @media (max-width: 680px) {
   
   .logo {
-width: 100px;
+    width: 100px;
   }
 
   h1 {
@@ -81,6 +81,12 @@ width: 100px;
     width: 100%;
     display: inline;
     object-fit: cover;
+  }
+
+  .creative {
+   
+  max-width: 100%;
+  font-size: 70%;
   }
 }
 
