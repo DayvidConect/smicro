@@ -17,10 +17,18 @@ gap: 30px;
 div .one {
     grid-column: span 3;
     margin-top: 15px;
-    display:block;
-    text-align: center;
+    display:flex;
     background-color: #702c63;
     color: white;
+}
+
+div .space {
+    margin-left: 40px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
 }
 
 .two {
