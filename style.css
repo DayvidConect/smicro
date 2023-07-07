@@ -3,6 +3,7 @@
 body {
     background-color:#5f1350;
     font-family: 'Montserrat Alternates', sans-serif;
+    min-height: 95vh;
 }
 
 
@@ -30,7 +31,8 @@ body {
 .division h2 {
     display:block;
     text-align: center;
-    margin-block-end: 100px;
+    margin-block-end: 80px;
+    margin-top: 50px;
     color: white;
     background-color: #531046; 
 }
@@ -59,26 +61,18 @@ body {
  .card {
     height: 200px;
     width: 200px;
+    margin-bottom: 15px;
     border-radius: 18%;
     float: left;
  }
 
-.seven {
-    background-color: #531046;
-    height: 100px;
-    width: 100%;
-    margin-top: 5%;
-    text-align: center;
-    color: white;   
-
- }
 
 .textobody {
     color: white;
 }
 
-@media (max-width: 680px){
-
+@media (max-width: 670px) {
+   
 
   .head .menu {
     margin-top: 15px;
