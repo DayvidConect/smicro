@@ -56,7 +56,7 @@ body {
     
 }
 
- .block {
+ .card {
     height: 200px;
     width: 200px;
     border-radius: 18%;
@@ -79,9 +79,6 @@ body {
 
 @media (max-width: 680px){
 
-  body {
-    display: 
-  }
 
   .head .menu {
     margin-top: 15px;
@@ -97,20 +94,22 @@ body {
   }
 
   .grid1 {
-    width: 100%;
+
     display: inline;
+    width: 100%;
     margin-bottom: 40px;
     text-align: justify;
   }
 
   .grid2 {
-    width: 100%;
+    
     display: inline;
+    width: 100%;
     margin-bottom: 40px;
     text-align: justify;
   }
 
-  .block {
+  .card {
     margin-bottom: 30px;
     width: 100%;
     height: 25%;
