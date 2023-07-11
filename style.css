@@ -97,6 +97,7 @@ body {
 
   .logo {
     
+    margin-top: 50px;
     width: 100%;
     height: 100%;
   }
@@ -127,11 +128,11 @@ body {
 
   .card {
     margin-bottom: 30px;
-    width: 100%;
+    width: 95%;
     height: 25%;
     border-radius: 0%;
     margin-left: 3%;
-    margin-right: 6%;
+    margin-right: 10%;
   }
 
   .textobody {
