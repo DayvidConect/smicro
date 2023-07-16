@@ -83,6 +83,17 @@ body {
 
 }
 
+.rodape {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  color:white;
+  margin-top: 100px;
+  height: 400px;
+  background-color: #702c63;
+  padding-top: 50px;
+  
+}
+
 @media (max-width: 670px) {
    
 
@@ -138,6 +149,7 @@ body {
   .textobody {
   
     margin-left: 2%;
+  
 
   }
 
@@ -149,6 +161,7 @@ body {
     color: white;
     background-color: #531046; 
     font-size:15px;
+  }
 
 
 }
