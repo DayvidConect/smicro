@@ -23,6 +23,7 @@ body {
   footer {
     text-align: right;
     color: midnightblue;
+    padding-top: 50px;
   }
   
   .logo {
@@ -45,7 +46,7 @@ body {
     float: left;
   }
   
-  .right {
+  .rigth {
     float: right;
   }
   
@@ -69,7 +70,9 @@ body {
     font-size:20px;
     font-weight: bolder;
   }
+
   
+
   @media (max-width: 680px) {
     
     .logo {
