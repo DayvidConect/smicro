@@ -32,6 +32,7 @@ footer {
   width: 300px;
   float: left;
   margin-right: 50px;
+  border-radius: 5px;
 }
 
 .card {

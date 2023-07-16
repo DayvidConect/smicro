@@ -34,6 +34,7 @@ body {
     width: 300px;
     float: left;
     margin-right: 50px;
+    border-radius: 5px;
   }
   
   .card {
@@ -55,11 +56,18 @@ body {
   }
   
   .card-title {
-    color:rgb(162, 162, 187)
+    color:rgb(162, 162, 187);
   }
   
   p {
     color: white
+  }
+
+  .link a {
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    font-weight: bolder;
   }
   
   @media (max-width: 680px) {
