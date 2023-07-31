@@ -16,13 +16,11 @@
     text-decoration: none;
 }
 
-.logo {
-
-    width: 700px;
-    height: 700px;
-    display: block;
-    margin: 0 auto;
-}
+ div .logo {
+    width:80px;
+    height: 80px;
+    margin-top: 1px;
+  }
 
 .division h2 {
     display:block;
@@ -186,8 +184,10 @@
     margin-block-end: 80px;
     margin-top: 50px;
     color: white;
-    background-color: #531046; 
-    font-size:20px;
+    background-color: #b14091; 
+    font-size:25px;
+   
+
   }
 
   .carousel-inner .d-block{
