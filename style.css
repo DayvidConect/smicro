@@ -62,6 +62,15 @@
   margin-block-end: 60px;
 }
 
+.grid4 {
+
+  display:flex;
+  gap:100px;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 60px;
+}
+
  .card {
     height: 200px;
     width: 200px;
@@ -147,6 +156,14 @@
   }
 
   .grid3 {
+    
+    display: inline;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+
+  .grid4 {
     
     display: inline;
     width: 100%;
