@@ -1,225 +1,359 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
     
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Shop Micropigmentação</title>
-           <link rel="stylesheet" href="./style.css" >
-           <link rel="preconnect" href="https://fonts.googleapis.com">
-              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  
+  <style>
+    
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
-                 integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      .card {
+        background-color: rgb(243, 243, 243);
+      }
 
-                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
-                 integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      .row{
+        padding-top: 70px;
+      }
 
-    </head>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-    <style>
-        body {
-    background-color:#5f1350;
-    font-family: 'Montserrat Alternates', sans-serif;
-    min-height: 95vh;
-}
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+
+
+    
     </style>
 
-    <body>
+</head>
 
-
-        <div class="head">
-
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><img class="logo" src="./Identidade-Visual/logo.png" alt="logo"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./como comprar/index.html">Como Comprar</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./quem somos/index.html">Quem Somos</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Produtos
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="./kits/index.html">Kits</a></li>
-                              <li><a class="dropdown-item" href="./descartaveis/index.html">Descartáveis</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Dermografos e acessórios</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">.</a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                      </div>
-                    </div>
-                  </nav>
-    
-            </div>
-
-
-
-        </div>
-
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./Identidade-Visual/logo.png" class="d-block1 w-100" alt="logo shop Micropigmentação">
-              </div>
-              <div class="carousel-item">
-                <img src="./Identidade-Visual/pig rb.PNG" class="d-block w-100" alt="imagem realista">
-              </div>
-              <div class="carousel-item">
-                <img src="./Identidade-Visual/pastamagica.png" class="d-block w-100" alt="Pasta mágica">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-
-        <div> 
-            <div class="division"><h2>Micropigmentação</h2>
-            </div>
-        </div>
-
-
-
-        <div class="grid1">
-
-            <div><img src="./Identidade-Visual/kitrbsobrancelha.png" class="card">
-                <p class="textobody" >Kit RB Kollors <br/>para sobrancelhas- <br/>4 pigmentos - 148€</p>
-            </div>
-
-            <div><img src="./Identidade-Visual/rblabios.png" class="card">
-                <p class="textobody" >Kit RB Kollors<br/>para lábios - <br/>6 pigmentos - 180€</p>
-            </div>
-
-            <div><img src="./Identidade-Visual/kit royal rb.png" class="card">
-                <p class="textobody" >Kit RB Royals<br/>Inorganico e híbrido <br/>- 180€</p>
-            </div>
-            
-            <div><img src="./Identidade-Visual/nuancelabios.png" class="card">
-                <p class="textobody" >Kit Nuance<br/> para lábios <br/>- 120€</p>
-            </div>
-
-        </div>
-           
-
-        <div class="grid2">
-
-            <div><img src="./Identidade-Visual/nuancesobrancelhas.png" class="card">
-                <p class="textobody" >Kit Nuance <br/>para sobrancelhas<br/> - 120€</p>
-            </div>
-
-            <div><img src="./Identidade-Visual/kitmaster.png" class="card">
-                <p class="textobody" >Kit Master <br/>lash lifting <br/>- 140€</p>
-            </div>
-
-            <div><img src="./Identidade-Visual/kithaut.png" class="card">
-                <p class="textobody" >Kit Haut para <br/>micropigmentação <br/>- 180€</p>
-            </div>
-
-            <div><img src="./Identidade-Visual/kitpeeling.png" class="card">
-                <p class="textobody" >Kit Peeling<br/>Enzimático<br/>- 85€</p>
-            </div>
-
-        </div>
-
-        <div class="division"><h2>Descartáveis</h2>
-        </div>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><img src="./bag-fill.svg" height="30" alt="image brand">  ShopMicro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./como comprar/index.html">Como Comprar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./quem somos/index.html">Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Parceirias</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Produtos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./kits/index.html">Kits</a></li>
+            <li><a class="dropdown-item" href="./descartaveis/index.html">Descartáveis</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Dermografos e acessórios</a></li>
+          </ul>
         
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-        <div class="grid3">
 
-            <div><img src="./Identidade-Visual/dermapen.png" class="card">
-                <p class="textobody" >Dermapen<br/>12P-36P-Nano <br/>10 unidades- 12€</p>
-            </div>
 
-            <div><img src="./Identidade-Visual/anel.png" class="card">
-                <p class="textobody" >Anel Batoque<br/>rosa- <br/>25 unidades - 4€</p>
-            </div>
-            
-            <div><img src="./Identidade-Visual/palitos.png" class="card">
-                <p class="textobody" >Palitos<br/>de madeira <br/>100unidades- 3€</p>
-            </div>
 
-            <div><img src="./Identidade-Visual/dispensador.png" class="card">
-                <p class="textobody" >Dispensador de<br/>Água<br/>- 4€</p>
-            </div>
 
+<div class="container">
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Identidade-Visual/logo.png" style="padding-left: 15%; padding-right: 15%;" class="d-block w-100" alt="image logo">
+    </div>
+    <div class="carousel-item">
+      <img src="./Carrossel/sale-gdb84b8424_1280.png" class="d-block w-100" alt="image sale">
+    </div>
+    <div class="carousel-item">
+      <img src="./Carrossel/kit rb 2.jpeg" class="d-block w-100" alt="image kit rb lábios">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+ </div>
+</div>
+
+
+</br></br>
+
+<div class="container">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/pigmentos.PNG"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Pigmentos</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pigmentos de micropigmentação utilizados para treino e trabalhos profissionais. Trabalhamos com diversas marcas, como RB Kollors e Nuance.</font><font style="vertical-align: inherit;"> Clique e saiba mais.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
         </div>
-
-            <div class="grid4">
-
-              <div><img src="./Identidade-Visual/laminas.png" class="card">
-                  <p class="textobody" >Lâminas<br/>chanfrada e U <br/>15 unidades- 10€</p>
-              </div>
-  
-              <div><img src="./Identidade-Visual/batoque.PNG" class="card">
-                  <p class="textobody" >Batoque<br/>médio incolor- <br/>25 unidades - 4€</p>
-              </div>
-              
-              <div><img src="./Identidade-Visual/pele sintetica.jpg" class="card">
-                  <p class="textobody" >Pele sintética<br/>para treino <br/>1 unidade- 4€</p>
-              </div>
-  
-              <div><img src="./Identidade-Visual/escova.PNG" class="card">
-                  <p class="textobody" >Escovinha <br/>descartável<br/>-50un - 4€</p>
-              </div>
-
-            
-
-            </div>
-
-        <div class="rodape">
-          
-            <ul>Redes Sociais
-                <a href="https://instagram.com/shop.micropigmentacao?igshid=OGQ5ZDc2ODk2ZA==" class="link"><p>Instagram</p></a>
-                <a href="https://www.linkedin.com/company/86263825/admin/feed/posts/" class="link"><p>Linkedin</p></a>
-            </ul>
-          
-            <ul>Como comprar?
-                <a href="./como comprar/index.html" class="link"><p>Clique e saiba mais.</p></a>
-            </ul>
-
-            <ul class="link">Fale Conosco
-                <p class="link">(+351)</p>
-            
-            </ul>
-
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/como comprar.PNG"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Como Comprar</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adquirir nossos produtos é fácil e descomplicado. É so clicar aqui na imagem e seguir o passo a passo.</font><font style="vertical-align: inherit;">Se tiver alguma dificuldade poderá falar diretamente com um de nossos atendentes no CHAT.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/logo com fundo.JPG"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Quem Somos</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este é um cartão mais amplo com texto de apoio abaixo como uma entrada natural para conteúdo adicional. </font><font style="vertical-align: inherit;">Este conteúdo é um pouco mais longo.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/parceirias.PNG"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Parcerias</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este é um cartão mais amplo com texto de apoio abaixo como uma entrada natural para conteúdo adicional. </font><font style="vertical-align: inherit;">Este conteúdo é um pouco mais longo.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/Clientes.jpg"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Depoimentos</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este é um cartão mais amplo com texto de apoio abaixo como uma entrada natural para conteúdo adicional. </font><font style="vertical-align: inherit;">Este conteúdo é um pouco mais longo.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/dermografo.jpg"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Dermografos e acessórios</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este é um cartão mais amplo com texto de apoio abaixo como uma entrada natural para conteúdo adicional. </font><font style="vertical-align: inherit;">Este conteúdo é um pouco mais longo.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </body>
-    
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/espelho.PNG"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Novidades</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este é um cartão mais amplo com texto de apoio abaixo como uma entrada natural para conteúdo adicional. </font><font style="vertical-align: inherit;">Este conteúdo é um pouco mais longo.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/pinça.PNG"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Dica de Milhões</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este é um cartão mais amplo com texto de apoio abaixo como uma entrada natural para conteúdo adicional. </font><font style="vertical-align: inherit;">Este conteúdo é um pouco mais longo.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="./artes 1 pagina/rb.jpg"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-left: 15px;">Produtos RB Kollors</text>
+      <div class="card-body">
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este é um cartão mais amplo com texto de apoio abaixo como uma entrada natural para conteúdo adicional. </font><font style="vertical-align: inherit;">Este conteúdo é um pouco mais longo.</font></font></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualizar</font></font></button>
+            <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+      <small class="d-block mb-3 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2017–2023</font></font></small>
+    </div>
+    <div class="col-6 col-md">
+      <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Coisas legais</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">recurso aleatório</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recurso de equipe</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Coisas para desenvolvedores</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Outro</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Última vez</font></font></a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recursos</font></font></h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nome do recurso</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recurso</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">outro recurso</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recurso final</font></font></a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recursos</font></font></h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Negócios</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Educação</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Governo</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jogos</font></font></a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre</font></font></h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Equipe</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Localizações</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privacidade</font></font></a></li>
+        <li><a class="link-secondary text-decoration-none" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Termos</font></font></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
 </html>
